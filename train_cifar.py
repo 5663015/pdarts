@@ -182,6 +182,7 @@ def infer(valid_queue, model, criterion):
 
 
 if __name__ == '__main__':
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
     start_time = time.time()
     main() 
     end_time = time.time()
